@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 12vmin;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px gray;
+    padding: 0px 3vmin;
+  }
+  
+  #logo {
+    flex: 1;
+    margin-left: 3vmin;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #menu ul {
+    list-style: none;
+    display: flex;
+    gap: 3vmin;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    color: #213454;
+  }
+  
+  #logo img {
+    height: 8vmin;
+  }
+  
+  #user {
+    margin: 1vmin 3.8vmin;
+    padding: 1.8vmin 5vmin;
+    background-color: rgb(83, 177, 236);
+    color: #fff;
+    font-size: 3.8vmin;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 3.2vmin;
+    padding: 3.5vmin;
+    color: rgb(12, 12, 12);
+    font-weight: 500;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .box1 {
+    width: 50%;
+    padding: 6vmin;
+  }
+  
+  .first1 {
+    display: grid;
+    row-gap: 3vmin;
+  }
+  
+  .box2 {
+    width: 50%;
+  }
+  
+  .image img {
+    width: 80%;
+    margin: 7vmin;
+  }
+  
+  h2 {
+    font-size: 7.5vmin;
+    font-weight: 700;
+    padding: 30px 0;
+  }
+  
+  h2 .heading {
+    color: rgb(57, 149, 202);
+  }
+  
+  p {
+    font-size: 2.5vmin;
+  }
+  
+  button {
+    padding: 2vmin 7vmin;
+    font-size: 4vmin;
+    margin: 5% 20%;
+    border-radius: 15px;
+    background-color: rgb(83, 177, 236);
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+
+
+/* section2 css */
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: orange;
+  height: 200px;
+}
+
+.info1 {
+  display: flex;
+  gap: 2vmin;
+  align-items: center;
+}
+
+.infoIcon i {
+  font-size: 7vmin;
+  color: #fff;
+}
+
+.dataInfo .info11 {
+  font-size: 4vmin;
+  font-weight: 700;
+  color: #fff;
+}
+
+.dataInfo .info12 {
+  font-size: 2.5vmin;
+  color: #fff;
+}
+
+/* second section css end */
+
+/* shopping cart Section css start */
+.productMainSection {
+  margin-left: 8vmin;
+}
+
+.shoppingCartSection h2 {
+  font-size: 7vmin;
+  margin: 3vmin 0px;
+}
+
+.cartInfoBox {
+  display: flex;
+  margin-top: 5vmin;
+}
+
+.leftBox {
+  width: 50%;
+}
+
+.rightBox {
+  width: 40%;
+}
+
+tr,
+th,
+td {
+  height: 8.5vmin;
+  padding: 0 3vmin;
+  font-size: 3vmin;
+}
+
+th {
+  border-bottom: solid gray 1px;
+}
+
+td span{
+  font-size: 2.8vmin;
+}
+
+.cartInfoBox .rightBox .cart {
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 5vmin;
+  padding: 3vmin;
+}
+
+.couponBox .coupon {
+  height: 7.5vmin;
+  width: 90%;
+}
+
+.couponBox span {
+  font-size: 3vmin;
+  color: #333;
+}
+
+.couponBox .coupon input {
+  width: 60%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 3vmin;
+}
+
+.couponBox .coupon button {
+  width: 30%;
+  color: #fff;
+  background-color: rgb(73, 73, 233);
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 3vmin;
+}
+
+.cartDetails {
+  display: grid;
+  gap: 3vmin;
+}
+
+.cartDetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartDetail p {
+  font-size: 2.5vmin;
+  color: #333;
+}
+
+.cartDetail h3 {
+  font-size: 2.8vmin;
+  color: #333;
+  font-size: 700;
+}
+
+.payButton {
+  margin: auto;
+  height: 8vmin;
+  width: 45vmin;
+  background-color: rgb(254, 173, 22);
+  color: #fff;
+  border: none;
+  font-size: 3vmin;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.payButton a {
+  color: #fff;
+}
+
+.paymentMode {
+  display: flex;
+  justify-content: space-evenly;
+}
+.paymentMode img {
+  max-height: 3vmin;
+}
+
+.continueShooping button {
+  font-size: 3vmin;
+  border: none;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+}
+/* shopping cart Section css end */
+
+  
+  footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vmin;
+    color: #fff;
+    height: 60px;
+  }
+  
+  .heart {
+    color: red;
+    font-size: 8vmin;
+    margin: 3vmin;
+  }
+  
+  @media (max-width: 700px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 12vmin;
+      right: 0;
+      width: 60%;
+      height: 100vh;
+      background-color: #fff;
+      z-index: 1;
+    }
+  
+    .menu-toggle:checked + .menu-icon + .menu {
+      display: flex;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+    }
+  
+    .menu ul li {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 100%;
+    }
+  
+    .menu ul li:hover {
+      background-color: rgb(83, 177, 236);
+    }
+  
+    .container {
+      display: grid;
+      justify-content: stretch;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .box1 {
+      max-width: 100%;
+      min-width: 85%;
+      margin: auto;
+    }
+  
+    .box2 {
+      width: 70%;
+      margin: auto;
+    }
+
+
+
+/* card box css */
+
+
+.cartInfoBox{
+  display: grid;
+}
+
+.cartInfoBox, .leftBox{
+  width: 100%;
+}
+
+.cartInfoBox, .leftBox table{
+  margin: auto;
+}
+
+.cartInfoBox, .rightBox{
+  width: 90%;
+}
+
+
+/* card box css */
+
+
+
+  
+    footer {
+      font-size: 3.5vmin;
+      height: 9.2vmin;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #logo img {
+      height: 25px;
+      padding: 3vmin;
+    }
+  
+    .box1 {
+      padding: 0;
+    }
+  
+    .menu-icon {
+      font-size: 20px;
+    }
+  }
+  

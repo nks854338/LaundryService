@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Laundry Project</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo"><img src="laundary.png" class="logo" /></div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <div id="menu" class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div id="user">Nandani</div>
+    </nav>
+
+    <section class="container">
+      <div class="box1">
+        <div class="first1">
+          <h2>
+            Fresh, Fast, and Flawless Laundry Service for
+            <div class="heading">Busy Lives</div>
+          </h2>
+          <p>
+            Experience the ultimate in laundry convenience with our expert
+            service. We offer professional cleaning, folding, and delivery,
+            ensuring your clothes are fresh and spotless. Save time and enjoy
+            more freedom by letting us handle your laundry needs with care and
+            precision. Satisfaction guaranteed with every wash.
+          </p>
+          <button>Book a service today!</button>
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="image">
+          <img src="laundary1.jpg" id="img_1" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="companyInfo">
+        <div class="info1">
+          <div class="infoIcon"><i class="fa-regular fa-comments"></i></div>
+          <div class="dataInfo">
+            <div class="info11">2k+</div>
+            <div class="info12">Reviews</div>
+          </div>
+        </div>
+        <div class="info1">
+          <div class="infoIcon"><i class="fa-solid fa-user-group"></i></div>
+          <div class="dataInfo">
+            <div class="info11">30k+</div>
+            <div class="info12">custemers</div>
+          </div>
+        </div>
+        <div class="info1">
+          <div class="infoIcon"><i class="fa-solid fa-ranking-star"></i></div>
+          <div class="dataInfo">
+            <div class="info11">High</div>
+            <div class="info12">Quality</div>
+          </div>
+        </div>
+        <div class="info1">
+          <div class="infoIcon"><i class="fa-regular fa-star"></i></div>
+          <div class="dataInfo">
+            <div class="info11">4.5/5</div>
+            <div class="info12">Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shoppingCartSection">
+      <h2>Shopping Cart</h2>
+      <div class="cartInfoBox">
+        <div class="leftBox">
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Stylish and Comfortable Running Shoes</td>
+              <td>
+                <span class="des">-</span><span class="pNo"> 1 </span
+                ><span class="dec">+</span>
+              </td>
+              <td>1200rs.</td>
+              <td>
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: rgb(218, 73, 73)"
+                ></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Stylish and Comfortable Running Shoes</td>
+              <td>
+                <span class="des">-</span><span class="pNo"> 1 </span
+                ><span class="dec">+</span>
+              </td>
+              <td>1200rs.</td>
+              <td>
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: rgb(218, 73, 73)"
+                ></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Stylish and Comfortable Running Shoes</td>
+              <td>
+                <span class="des">-</span><span class="pNo"> 1 </span
+                ><span class="dec">+</span>
+              </td>
+              <td>1200rs.</td>
+              <td>
+                <i
+                  class="fa-solid fa-xmark"
+                  style="color: rgb(218, 73, 73)"
+                ></i>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="rightBox">
+          <div class="cart">
+            <form action="" method="POST">
+              <div class="couponBox">
+                <span>Enter coupon code</span>
+                <div class="coupon">
+                  <input type="text" placeholder="coupon code" />
+                  <button>Add coupon</button>
+                </div>
+              </div>
+            </form>
+            <div class="cartDetails">
+              <div class="cartDetail">
+                <p>Sub Total</p>
+                <p>4700rs.</p>
+              </div>
+              <div class="cartDetail">
+                <p>Taxes(if applicable)</p>
+                <p>100rs.</p>
+              </div>
+              <div class="cartDetail">
+                <p>Discount</p>
+                <p>200rs.</p>
+              </div>
+              <div class="cartDetail total">
+                <h3>total</h3>
+                <h3>5000rs.</h3>
+              </div>
+            </div>
+            <button class="payButton">
+              <a href="Payment.html">Pay Now 5000</a>
+            </button>
+            <div class="paymentMode">
+              <img
+                src="image/paypal.png"
+                alt="paypal"
+                class="mode1"
+                height=""
+              />
+              <img src="image/Paytm.png" alt="Paytm" class="mode1" height="" />
+              <img src="image/Gpay.png" alt="G-pay" class="mode1" height="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="continueShooping">
+        <button class="continueShoppingBtn">
+          <i class="fa-solid fa-backward"></i> Continue Shooping
+        </button>
+      </div>
+    </section>
+    <footer>
+        <div class="footBox1"></div>
+        <div class="footBox2"></div>
+        <div class="footBox3"></div>
+        <div class="footBox4"></div>
+    </footer>
+  </body>
+</html>
