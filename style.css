@@ -1,135 +1,133 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 12vmin;
-    background-color: #fff;
-    box-shadow: 0px 5px 10px gray;
-    padding: 0px 3vmin;
-  }
-  
-  #logo {
-    flex: 1;
-    margin-left: 3vmin;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu-toggle {
-    display: none;
-  }
-  
-  .menu-icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  
-  #menu ul {
-    list-style: none;
-    display: flex;
-    gap: 3vmin;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #menu ul li a {
-    text-decoration: none;
-    color: #213454;
-  }
-  
-  #logo img {
-    height: 8vmin;
-  }
-  
-  #user {
-    margin: 1vmin 3.8vmin;
-    height: 8vmin;
-    width: 8vmin;
-    border-radius: 50%;
-    background-color: #213454;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #user img{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 3.2vmin;
-    padding: 3.5vmin;
-    color: rgb(12, 12, 12);
-    font-weight: 500;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .box1 {
-    width: 50%;
-    padding: 6vmin;
-  }
-  
-  .first1 {
-    display: grid;
-    row-gap: 3vmin;
-  }
-  
-  .box2 {
-    width: 50%;
-  }
-  
-  .image img {
-    width: 80%;
-    margin: 7vmin;
-  }
-  
-  .first1 h2 {
-    font-size: 7.5vmin;
-    font-weight: 700;
-    padding: 30px 0;
-  }
-  
-  .first1 h2 .heading {
-    color: rgb(57, 149, 202);
-  }
-  
-  .first1 p {
-    font-size: 2.5vmin;
-  }
-  
-  .first1 button {
-    padding: 2vmin 7vmin;
-    font-size: 4vmin;
-    margin: 5% 20%;
-    border-radius: 15px;
-    background-color: rgb(83, 177, 236);
-    color: #fff;
-    cursor: pointer;
-  }
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 12vmin;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px gray;
+  padding: 0px 3vmin;
+}
+
+#logo {
+  flex: 1;
+  margin-left: 3vmin;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 3vmin;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #213454;
+}
+
+#logo img {
+  height: 8vmin;
+}
+
+#user {
+  margin: 1vmin 3.8vmin;
+  height: 8vmin;
+  width: 8vmin;
+  border-radius: 50%;
+  background-color: #213454;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 3.2vmin;
+  padding: 3.5vmin;
+  color: rgb(12, 12, 12);
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box1 {
+  width: 50%;
+  padding: 6vmin;
+}
+
+.first1 {
+  display: grid;
+  row-gap: 3vmin;
+}
+
+.box2 {
+  width: 50%;
+}
+
+.image img {
+  width: 80%;
+  margin: 7vmin;
+}
+
+.first1 h2 {
+  font-size: 7.5vmin;
+  font-weight: 700;
+  padding: 30px 0;
+}
+
+.first1 h2 .heading {
+  color: rgb(57, 149, 202);
+}
+
+.first1 p {
+  font-size: 2.5vmin;
+}
+
+.first1 button {
+  padding: 2vmin 7vmin;
+  font-size: 4vmin;
+  margin: 5% 20%;
+  border-radius: 15px;
+  background-color: rgb(83, 177, 236);
+  color: #fff;
+  cursor: pointer;
+}
 
 /* section2 css */
 
@@ -138,25 +136,32 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: rgb(83, 177, 236);
-  height: 200px;
+  height: 30vmin;
+}
+
+.achivementInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .info1 {
   display: flex;
   gap: 2vmin;
+  margin: 1vmin;
   align-items: center;
 }
 
-.infoText{
+.infoText {
   font-size: 7vmin;
   color: #fff;
 }
 
-.infoIcon{
+.infoIcon {
   width: 12vmin;
 }
 
-.infoIcon img{
+.infoIcon img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -176,68 +181,68 @@
 
 /* Laundry service Section css start */
 
-.serviceContainer{
+.serviceContainer {
   display: flex;
   justify-content: space-between;
   margin: 10vmin;
 }
 
-.serviceContainer .leftBox{
+.serviceContainer .leftBox {
   box-shadow: 0 0px 5px gray;
   border-radius: 10px;
   padding: 3vmin;
- width: 48%;
+  width: 48%;
 }
-.serviceContainer .rightBox{
- width: 48%;
-
+.serviceContainer .rightBox {
+  width: 48%;
 }
 
-.serviceInfoTitle{
+.serviceInfoTitle {
   min-height: 10vmin;
 }
 
-.serviceInfoTitle h2{
+.serviceInfoTitle h2 {
   font-size: 6vmin;
 }
 
-.serviceInfoTitle p{
+.serviceInfoTitle p {
   font-size: 2.5vmin;
 }
 
-#serviceTable{
+#serviceTable {
   margin: 5vmin 0;
   min-width: 100%;
 }
 
-#serviceTable tr{
+#serviceTable tr {
   box-shadow: 0 0.5px 0.5px gray;
   height: 9vmin;
 }
 
-.cartService{
+.cartService {
   display: flex;
   align-items: center;
 }
 
-.serviceImgBox{
+.serviceImgBox {
   height: 5vmin;
 }
 
-.serviceImgBox img{
+.serviceImgBox img {
   height: 100%;
   margin-right: 2vmin;
 }
 
-.serviceName{
+.serviceName {
   font-weight: 600;
 }
 
-.servicePrice , .InstructionForCart{
+.servicePrice,
+.InstructionForCart {
   color: rgb(5, 5, 215);
 }
 
-.addToCartBtn{
+.addToCartBtn {
   height: 6vmin;
   width: 100%;
   display: flex;
@@ -248,10 +253,9 @@
   border-radius: 15px;
 }
 
-
 /* right box */
 
-.rightUpperBox{
+.rightUpperBox {
   width: 100%;
   height: 50vmin;
   box-shadow: 0 0 5px gray;
@@ -259,7 +263,7 @@
   margin-bottom: 10px;
 }
 
-.addedItemHeading{
+.addedItemHeading {
   justify-content: center;
   font-size: 5vmin;
   font-weight: 600;
@@ -268,11 +272,11 @@
   align-items: center;
 }
 
-.addedItemList{
+.addedItemList {
   height: 40vmin;
 }
 
-.amountInfo{
+.amountInfo {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -280,7 +284,7 @@
   height: 5vmin;
 }
 
-.table{
+.table {
   width: 100%;
   height: 30vmin;
   overflow: scroll;
@@ -291,64 +295,63 @@
   display: none;
 }
 
-
-#addedItemTable{
+#addedItemTable {
   width: 100%;
 }
 
-
-.table tr{
+.table tr {
   height: 6vmin;
   box-shadow: 0 0.5px 0.5px gray;
 }
 
-.table tr td{
+.table tr td {
   text-align: center;
-} 
+}
 
-.rightLowerBox{
+.rightLowerBox {
   width: 100%;
   box-shadow: 0 0 5px gray;
   border-radius: 10px;
 }
 
-form{
+form {
   display: grid;
   gap: 3vmin;
   padding: 15px;
 }
 
-.lowerRightName{
+.lowerRightName {
   font-size: 5vmin;
   margin: auto;
 }
 
-.inputName{
+.inputName {
   width: 100%;
   border-radius: 10px;
   border: none;
 }
 
-input{
+input {
   height: 6vmin;
   border-radius: 10px;
   width: 100%;
   box-shadow: 0 0px 5px gray;
-  border: none; 
+  border: none;
 }
 
-.userInfo{
+.userInfo {
   display: flex;
   gap: 2vmin;
   width: 98%;
   align-items: center;
 }
 
-.inputPhone, .inputEmail{
+.inputPhone,
+.inputEmail {
   min-width: 50%;
 }
 
-.submit{
+.submit {
   height: 7vmin;
   width: 45vmin;
   font-size: 3vmin;
@@ -361,79 +364,76 @@ input{
   border-radius: 20px;
 }
 
-
 /* Laundry service Section css end */
-
 
 /* companyInfo Section css start */
 
-.companyInfoBox{
+.companyInfoBox {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 10vmin 0vmin;
 }
 
-.companyInfo1{
+.companyInfo1 {
   width: 20%;
 }
 
-.companyInfo1 div h3{
+.companyInfo1 div h3 {
   font-size: 3.5vmin;
 }
 
-.companyInfo1 div p{
+.companyInfo1 div p {
   font-size: 2.3vmin;
 }
 
-.companyInfoImg{
+.companyInfoImg {
   width: 20%;
   margin: auto;
 }
 
-.companyInfo1 img{
- max-width: 100%;
+.companyInfo1 img {
+  max-width: 100%;
 }
 
-.companyInfo1 div{
+.companyInfo1 div {
   text-align: center;
 }
 
 /* companyInfo Section css end */
 
-
 /* subscribe Section css start */
 
-.subscribeBox{
+.subscribeBox {
   background-color: rgb(83, 177, 236);
   color: #fff;
   width: 100%;
-  height: 30vmin;
+  height: 40vmin;
   display: flex;
   align-items: center;
 }
 
-.subscribeHeading{
+.subscribeHeading {
   width: 40%;
   margin: auto;
   font-size: 5vmin;
 }
 
-.subscribeInputs{
+.subscribeInputs {
   width: 50%;
 }
 
-.subscribeInputs input{
-max-width: 40%;
-margin: 3vmin;
-padding-left: 2vmin;
+.subscribeInputs input {
+  max-width: 40%;
+  margin: 3vmin;
+  padding-left: 2vmin;
 }
 
-.subCon{
+.subCon {
   max-width: 100%;
 }
 
-.subscribeBtn{
+.subscribeBtn {
   height: 7vmin;
   width: 45vmin;
   font-size: 3vmin;
@@ -450,16 +450,16 @@ padding-left: 2vmin;
 
 /* footer css start */
 
-footer{
+footer {
   background-color: #213454;
   color: #fff;
 }
 
-.footIcon{
+.footIcon {
   display: flex;
 }
 
-footer .companyInfoBox .companyInfo1{
+footer .companyInfoBox .companyInfo1 {
   width: 20%;
   background-color: #213454;
   display: grid;
@@ -467,152 +467,309 @@ footer .companyInfoBox .companyInfo1{
   gap: 1.5vmin;
 }
 
-footer .companyInfoBox{
+footer .companyInfoBox {
   display: flex;
   height: 30vmin;
   align-items: baseline;
   justify-content: space-evenly;
 }
 
-.footIcon{
+.footIcon {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.footIcon img{
+.footIcon img {
   max-height: 40%;
 }
 
-.footLink{
-  font-size: 15px;
+.footLink {
+  font-size: 2.8vmin;
 }
 
-.companyInfo1 .impoLink{
+.companyInfo1 .impoLink {
   font-size: 4vmin;
 }
 
-.companyInfo1 .footLogo{
+.companyInfo1 .footLogo {
   font-size: 6.5vmin;
 }
 
-.companyInfo1 h4{
+.companyInfo1 h4 {
   font-size: 3.7vmin;
 }
 
 /* footer css end */
 
+@media (max-width: 850px) {
+  .serviceContainer {
+    margin: 2vmin;
+  }
 
+  /* section2 css */
+  .infoText {
+    margin: auto;
+    text-align: center;
+  }
 
+  .companyInfo {
+    display: grid;
+  }
+  /* section2 css end*/
 
+  /* Laundry service Section css start */
 
+  .serviceContainer {
+    display: grid;
+    justify-content: stretch;
+    margin: 5vmin;
+  }
 
+  .serviceContainer .leftBox {
+    margin-bottom: 5vmin;
+    width: 95%;
+  }
+  .serviceContainer .rightBox {
+    width: 99%;
+  }
 
+  .rightUpperBox {
+    margin-bottom: 5vmin;
+  }
 
-  @media (max-width: 700px) {
-    .menu-icon {
-      display: block;
-    }
-  
-    .menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 12vmin;
-      right: 0;
-      width: 60%;
-      height: 100vh;
-      background-color: #fff;
-      z-index: 1;
-    }
-  
-    .menu-toggle:checked + .menu-icon + .menu {
-      display: flex;
-    }
-  
-    .menu ul {
-      flex-direction: column;
-      gap: 0;
-      width: 100%;
-    }
-  
-    .menu ul li {
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 100%;
-    }
-  
-    .menu ul li:hover {
-      background-color: rgb(83, 177, 236);
-    }
-  
-    .container {
-      display: grid;
-      justify-content: stretch;
-      align-items: center;
-      margin: auto;
-    }
-  
-    .box1 {
-      max-width: 100%;
-      min-width: 85%;
-      margin: auto;
-    }
-  
-    .box2 {
-      width: 70%;
-      margin: auto;
-    }
+  /* footer */
 
+  .subscribeBox {
+    display: grid;
+    justify-content: stretch;
+    height: 50vmin;
+  }
 
+  .subscribeInputs {
+    width: 100%;
+    padding: 1vmin;
+    margin: auto;
+  }
 
-/* card box css */
+  .subscribeInput {
+    margin: auto;
+  }
 
-
-.serviceInfoBox{
-  display: grid;
+  .subscribeHeading {
+    font-size: 4vmin;
+    width: 70%;
+    text-align: center;
+  }
 }
 
-.serviceInfoBox, .leftBox{
+@media (max-width: 700px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 12vmin;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .menu ul li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+  }
+
+  .menu ul li:hover {
+    background-color: rgb(83, 177, 236);
+  }
+
+  .container {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    margin: auto;
+  }
+
+  .box1 {
+    max-width: 100%;
+    min-width: 85%;
+    margin: auto;
+  }
+
+  .box2 {
+    width: 70%;
+    margin: auto;
+  }
+
+  /* card box css */
+
+  .serviceInfoBox {
+    display: grid;
+  }
+
+  .serviceInfoBox,
+  .leftBox {
+    width: 100%;
+  }
+
+  .serviceInfoBox,
+  .leftBox table {
+    margin: auto;
+  }
+
+  .serviceInfoBox,
+  .rightBox {
+    width: 90%;
+  }
+
+  /* footer css start */
+
+  footer .companyInfoBox {
+    display: flex;
+    height: 30vmin;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+
+  .footIcon {
+    width: 100%;
+  }
+
+  .footIcon img {
+    max-height: 40%;
+  }
+
+  .footLink {
+    font-size: 2.2vmin;
+  }
+
+  .companyInfo1 .impoLink {
+    font-size: 3.2vmin;
+  }
+
+  .companyInfo1 .footLogo {
+    font-size: 4.5vmin;
+  }
+
+  .companyInfo1 h4 {
+    font-size: 3vmin;
+  }
+
+  /* footer css end */
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 500px) {
+  #logo img {
+    height: 25px;
+    padding: 3vmin;
+  }
+
+  .box1 {
+    padding: 0;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  /* companyInfo Section css start */
+
+  .companyInfoSection .companyInfoBox {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 5vmin;
+  }
+
+  .companyInfoSection .companyInfoBox .companyInfo1 {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 1px 5px gray;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 2vmin;
+  }
+
+  .companyInfoSection .companyInfoBox .companyInfo1 div h3 {
+    font-size: 4.8vmin;
+  }
+
+  .companyInfoSection .companyInfoBox .companyInfo1 div p {
+    font-size: 3.2vmin;
+  }
+
+  .companyInfo1 .companyInfoImg {
+    width: 20%;
+    margin: auto;
+  }
+
+  /* serviceSection css*/ /* Laundry service Section css start */
+
+  .serviceContainer {
+    margin: 2vmin;
+  }
+
+  .serviceContainer .leftBox {
+    margin-bottom: 5vmin;
+    width: 95%;
+  }
+  .serviceContainer .rightBox {
+    width: 99%;
+  }
+
+  .rightUpperBox {
+    width: 102%;
+    margin-bottom: 5vmin;
+  }
+
+  .rightLowerBox {
+    width: 102%;
+    margin-bottom: 5vmin;
+  }
+
+.serviceName, .servicePrice{
+  font-size: 13px;
+}
+
+.addToCartBtn {
+  height: 5vmin;
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 1vmin;
 }
 
-.serviceInfoBox, .leftBox table{
-  margin: auto;
-}
-
-.serviceInfoBox, .rightBox{
-  width: 90%;
+.InstructionForCart{
+  font-size: 13px;
 }
 
 
-/* card box css */
-
-
-
-  
-    footer {
-      font-size: 3.5vmin;
-      height: 9.2vmin;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    #logo img {
-      height: 25px;
-      padding: 3vmin;
-    }
-  
-    .box1 {
-      padding: 0;
-    }
-  
-    .menu-icon {
-      font-size: 20px;
-    }
-  }
-  
+}
