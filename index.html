@@ -30,7 +30,7 @@
           <li><a href="#">Contact us</a></li>
         </ul>
       </div>
-      <div id="user">Nandani</div>
+      <div id="user"><img src="profilePic.png" class="profilePic" /></div>
     </nav>
 
     <section class="container">
@@ -61,148 +61,387 @@
     <section class="section2">
       <div class="companyInfo">
         <div class="info1">
-          <div class="infoIcon"><i class="fa-regular fa-comments"></i></div>
+          <div class="infoText">Our Achievement</div>
+        </div>
+        <div class="info1">
+          <div class="infoIcon">
+            <img src="service.png" alt="serviceIcon" class="iconImg" />
+          </div>
           <div class="dataInfo">
-            <div class="info11">2k+</div>
-            <div class="info12">Reviews</div>
+            <div class="info11">15+</div>
+            <div class="info12">Laundry Services</div>
           </div>
         </div>
         <div class="info1">
-          <div class="infoIcon"><i class="fa-solid fa-user-group"></i></div>
+          <div class="infoIcon">
+            <img src="customer-service.png" alt="serviceIcon" class="iconImg" />
+          </div>
           <div class="dataInfo">
-            <div class="info11">30k+</div>
-            <div class="info12">custemers</div>
+            <div class="info11">250+</div>
+            <div class="info12">Happy customers</div>
           </div>
         </div>
         <div class="info1">
-          <div class="infoIcon"><i class="fa-solid fa-ranking-star"></i></div>
-          <div class="dataInfo">
-            <div class="info11">High</div>
-            <div class="info12">Quality</div>
+          <div class="infoIcon">
+            <img src="quality.png" alt="serviceIcon" class="iconImg" />
           </div>
-        </div>
-        <div class="info1">
-          <div class="infoIcon"><i class="fa-regular fa-star"></i></div>
           <div class="dataInfo">
-            <div class="info11">4.5/5</div>
-            <div class="info12">Rating</div>
+            <div class="info11">2+ yrs</div>
+            <div class="info12">Experience</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="shoppingCartSection">
-      <h2>Shopping Cart</h2>
-      <div class="cartInfoBox">
+    <section class="serviceSection">
+      <div class="serviceContainer">
         <div class="leftBox">
-          <table>
+          <div class="serviceInfoTitle">
+            <h2>Our Services</h2>
+            <p>
+              Click on the add to cart button to add the services to your cart
+            </p>
+          </div>
+          <table id="serviceTable">
             <tr>
-              <th>Product</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>Stylish and Comfortable Running Shoes</td>
               <td>
-                <span class="des">-</span><span class="pNo"> 1 </span
-                ><span class="dec">+</span>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="drying.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Dry cleaning</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹200.00
+                  </div>
+                </div>
               </td>
-              <td>1200rs.</td>
               <td>
-                <i
-                  class="fa-solid fa-xmark"
-                  style="color: rgb(218, 73, 73)"
-                ></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Stylish and Comfortable Running Shoes</td>
-              <td>
-                <span class="des">-</span><span class="pNo"> 1 </span
-                ><span class="dec">+</span>
-              </td>
-              <td>1200rs.</td>
-              <td>
-                <i
-                  class="fa-solid fa-xmark"
-                  style="color: rgb(218, 73, 73)"
-                ></i>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
               </td>
             </tr>
             <tr>
-              <td>Stylish and Comfortable Running Shoes</td>
               <td>
-                <span class="des">-</span><span class="pNo"> 1 </span
-                ><span class="dec">+</span>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="ironing-board.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Ironing</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹30.00
+                  </div>
+                </div>
               </td>
-              <td>1200rs.</td>
               <td>
-                <i
-                  class="fa-solid fa-xmark"
-                  style="color: rgb(218, 73, 73)"
-                ></i>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="stain-remover.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Stain removal</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹550.00
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="laundry.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Wash and fold</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹150.00
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="service.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Dry cleaning</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹200.00
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="iron.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Wash and iron</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹350.00
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartService">
+                  <div class="serviceImgBox">
+                    <img
+                      src="wedding.png"
+                      alt=""
+                      height="20px"
+                      class="serviceImg"
+                    />
+                  </div>
+                  <div class="serviceName">Wedding dress cleaning</div>
+                  <div class="servicePrice">
+                    <i class="fa-solid fa-circle" style="color: #e3e3e3"></i>
+                    ₹3000.00
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="addToCartBtn">
+                  Add Item <i class="fa-solid fa-circle-plus"></i>
+                </div>
               </td>
             </tr>
           </table>
+          <div class="InstructionForCart">
+            <i class="fa-solid fa-circle-info"></i> Add the items to cart and
+            book now
+          </div>
         </div>
 
         <div class="rightBox">
-          <div class="cart">
-            <form action="" method="POST">
-              <div class="couponBox">
-                <span>Enter coupon code</span>
-                <div class="coupon">
-                  <input type="text" placeholder="coupon code" />
-                  <button>Add coupon</button>
+          <div class="rightUpperBox">
+            <div class="addedItemHeading">Added Items</div>
+            <div class="addedItemList">
+              <div class="table">
+                <table id="addedItemTable">
+                  <tr>
+                    <th>S.No</th>
+                    <th>Service Name</th>
+                    <th>Price</th>
+                  </tr>
+                </table>
+              </div>
+              <div class="amountInfo">
+                <div class="totalAmountName">Total Amount:</div>
+                <div class="totalAmountValue">₹0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="rightLowerBox">
+            <form action="">
+              <h2 class="lowerRightName">Book Now</h2>
+              <div class="inputName">
+                <h3>Name</h3>
+                <input type="text" class="inputUserDetails userName" />
+              </div>
+              <div class="userInfo">
+                <div class="inputEmail">
+                  <h3>Email</h3>
+                  <input type="email" class="inputUserDetails userOtherInfo" />
+                </div>
+                <div class="inputPhone">
+                  <h3>Phone no</h3>
+                  <input type="number" class="inputUserDetails userOtherInfo" />
                 </div>
               </div>
+              <div class="submit">Book Now</div>
             </form>
-            <div class="cartDetails">
-              <div class="cartDetail">
-                <p>Sub Total</p>
-                <p>4700rs.</p>
-              </div>
-              <div class="cartDetail">
-                <p>Taxes(if applicable)</p>
-                <p>100rs.</p>
-              </div>
-              <div class="cartDetail">
-                <p>Discount</p>
-                <p>200rs.</p>
-              </div>
-              <div class="cartDetail total">
-                <h3>total</h3>
-                <h3>5000rs.</h3>
-              </div>
-            </div>
-            <button class="payButton">
-              <a href="Payment.html">Pay Now 5000</a>
-            </button>
-            <div class="paymentMode">
-              <img
-                src="image/paypal.png"
-                alt="paypal"
-                class="mode1"
-                height=""
-              />
-              <img src="image/Paytm.png" alt="Paytm" class="mode1" height="" />
-              <img src="image/Gpay.png" alt="G-pay" class="mode1" height="" />
-            </div>
           </div>
         </div>
       </div>
-      <div class="continueShooping">
-        <button class="continueShoppingBtn">
-          <i class="fa-solid fa-backward"></i> Continue Shooping
-        </button>
+    </section>
+    <section class="companyInfoSection">
+      <div class="companyInfoBox">
+        <div class="companyInfo1">
+          <div class="companyInfoImg">
+            <img src="laundry-machine.png" alt="" />
+          </div>
+          <div class="companyInfoHeading"><h3>Premium service</h3></div>
+          <div class="companyInfoPara">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              voluptatum a quae fuga, commodi non labore
+            </p>
+          </div>
+        </div>
+        <div class="companyInfo1">
+          <div class="companyInfoImg">
+            <img src="customer-services.png" alt="" />
+          </div>
+          <div class="companyInfoHeading"><h3>Quick support</h3></div>
+          <div class="companyInfoPara">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              voluptatum a quae fuga, commodi non labore
+            </p>
+          </div>
+        </div>
+        <div class="companyInfo1">
+          <div class="companyInfoImg"><img src="hassle-free.png" alt="" /></div>
+          <div class="companyInfoHeading"><h3>Hassle free delivery</h3></div>
+          <div class="companyInfoPara">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              voluptatum a quae fuga, commodi non labore
+            </p>
+          </div>
+        </div>
+        <div class="companyInfo1">
+          <div class="companyInfoImg"><img src="affordable.png" alt="" /></div>
+          <div class="companyInfoHeading"><h3>Affordable price</h3></div>
+          <div class="companyInfoPara">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              voluptatum a quae fuga, commodi non labore
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="subscriptionSection">
+      <div class="subscribeBox">
+        <div class="subscribeHeading"><h2>Subscribe to our newsletter</h2></div>
+        <div class="subscribeInputs">
+          <div class="subCon">
+            <div class="subscribeInput">
+              <input type="text" placeholder="Full Name..." /><input
+                type="email"
+                placeholder="Email..."
+              />
+            </div>
+            <div class="subscribeBtn">Subscribe</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        <div class="footBox1"></div>
-        <div class="footBox2"></div>
-        <div class="footBox3"></div>
-        <div class="footBox4"></div>
+      <div class="companyInfoBox">
+        <div class="companyInfo1">
+          <h4 class="footLogo">Logo</h4>
+          <p class="impoLink">About us</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              voluptatum a quae fuga, commodi non labore
+            </p>
+        </div>
+        <div class="companyInfo1">
+          <div class="impoLink">Importent links</div>
+          <p class="footLink">About us</p>
+          <p class="footLink">Contact us</p>
+          <p class="footLink">Privacy policy</p>
+          <p class="footLink">Term of use</p>
+          <p class="footLink">Resfund policy</p>
+        </div>
+        <div class="companyInfo1">
+          <p class="impoLink">Contact</p>
+          <p class="footLink">nks854338@gmail.com</p>
+          <p class="footLink">+91 976543210</p>
+        </div>
+        <div class="companyInfo1">
+          <p class="impoLink">follow us</p>
+          <div class="footIcon">
+            <div class="footiconImg"><img
+              src="facebook.png"
+              height="100px"
+              alt=""
+            />
+          </div>
+          <div class="footiconImg">
+            <img
+              src="instagram.png"
+              height="100px"
+              alt=""
+            />
+          </div>
+            <div class="footiconImg">
+            <img
+              src="whatsapp.png"
+              height="100px"
+              alt=""
+            />
+          </div>
+            <div class="footiconImg">
+            <img
+              src="youtube.png"
+              height="100px"
+              alt=""
+            />
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

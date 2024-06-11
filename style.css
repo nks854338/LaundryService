@@ -59,12 +59,18 @@
   
   #user {
     margin: 1vmin 3.8vmin;
-    padding: 1.8vmin 5vmin;
-    background-color: rgb(83, 177, 236);
-    color: #fff;
-    font-size: 3.8vmin;
-    border-radius: 30px;
-    cursor: pointer;
+    height: 8vmin;
+    width: 8vmin;
+    border-radius: 50%;
+    background-color: #213454;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #user img{
+    max-width: 100%;
+    max-height: 100%;
   }
   
   a {
@@ -99,21 +105,21 @@
     margin: 7vmin;
   }
   
-  h2 {
+  .first1 h2 {
     font-size: 7.5vmin;
     font-weight: 700;
     padding: 30px 0;
   }
   
-  h2 .heading {
+  .first1 h2 .heading {
     color: rgb(57, 149, 202);
   }
   
-  p {
+  .first1 p {
     font-size: 2.5vmin;
   }
   
-  button {
+  .first1 button {
     padding: 2vmin 7vmin;
     font-size: 4vmin;
     margin: 5% 20%;
@@ -125,14 +131,13 @@
 
 
 
-
 /* section2 css */
 
 .companyInfo {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: orange;
+  background-color: rgb(83, 177, 236);
   height: 200px;
 }
 
@@ -142,13 +147,22 @@
   align-items: center;
 }
 
-.infoIcon i {
+.infoText{
   font-size: 7vmin;
   color: #fff;
 }
 
+.infoIcon{
+  width: 12vmin;
+}
+
+.infoIcon img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .dataInfo .info11 {
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   font-weight: 700;
   color: #fff;
 }
@@ -160,152 +174,341 @@
 
 /* second section css end */
 
-/* shopping cart Section css start */
-.productMainSection {
-  margin-left: 8vmin;
-}
+/* Laundry service Section css start */
 
-.shoppingCartSection h2 {
-  font-size: 7vmin;
-  margin: 3vmin 0px;
-}
-
-.cartInfoBox {
+.serviceContainer{
   display: flex;
-  margin-top: 5vmin;
+  justify-content: space-between;
+  margin: 10vmin;
 }
 
-.leftBox {
-  width: 50%;
-}
-
-.rightBox {
-  width: 40%;
-}
-
-tr,
-th,
-td {
-  height: 8.5vmin;
-  padding: 0 3vmin;
-  font-size: 3vmin;
-}
-
-th {
-  border-bottom: solid gray 1px;
-}
-
-td span{
-  font-size: 2.8vmin;
-}
-
-.cartInfoBox .rightBox .cart {
-  background-color: #f7f7f7;
-  display: grid;
-  gap: 5vmin;
-  padding: 3vmin;
-}
-
-.couponBox .coupon {
-  height: 7.5vmin;
-  width: 90%;
-}
-
-.couponBox span {
-  font-size: 3vmin;
-  color: #333;
-}
-
-.couponBox .coupon input {
-  width: 60%;
-  height: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding-left: 10px;
-  font-size: 3vmin;
-}
-
-.couponBox .coupon button {
-  width: 30%;
-  color: #fff;
-  background-color: rgb(73, 73, 233);
-  height: 100%;
-  border: none;
+.serviceContainer .leftBox{
+  box-shadow: 0 0px 5px gray;
   border-radius: 10px;
-  font-size: 3vmin;
+  padding: 3vmin;
+ width: 48%;
+}
+.serviceContainer .rightBox{
+ width: 48%;
+
 }
 
-.cartDetails {
-  display: grid;
-  gap: 3vmin;
+.serviceInfoTitle{
+  min-height: 10vmin;
 }
 
-.cartDetail {
+.serviceInfoTitle h2{
+  font-size: 6vmin;
+}
+
+.serviceInfoTitle p{
+  font-size: 2.5vmin;
+}
+
+#serviceTable{
+  margin: 5vmin 0;
+  min-width: 100%;
+}
+
+#serviceTable tr{
+  box-shadow: 0 0.5px 0.5px gray;
+  height: 9vmin;
+}
+
+.cartService{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.cartDetail p {
-  font-size: 2.5vmin;
-  color: #333;
+.serviceImgBox{
+  height: 5vmin;
 }
 
-.cartDetail h3 {
-  font-size: 2.8vmin;
-  color: #333;
-  font-size: 700;
+.serviceImgBox img{
+  height: 100%;
+  margin-right: 2vmin;
 }
 
-.payButton {
-  margin: auto;
-  height: 8vmin;
-  width: 45vmin;
-  background-color: rgb(254, 173, 22);
-  color: #fff;
-  border: none;
-  font-size: 3vmin;
+.serviceName{
   font-weight: 600;
+}
+
+.servicePrice , .InstructionForCart{
+  color: rgb(5, 5, 215);
+}
+
+.addToCartBtn{
+  height: 6vmin;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+  justify-content: center;
+  background-color: rgb(203, 203, 203);
+  border-radius: 15px;
+}
+
+
+/* right box */
+
+.rightUpperBox{
+  width: 100%;
+  height: 50vmin;
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.addedItemHeading{
+  justify-content: center;
+  font-size: 5vmin;
+  font-weight: 600;
+  height: 10vmin;
+  display: flex;
+  align-items: center;
+}
+
+.addedItemList{
+  height: 40vmin;
+}
+
+.amountInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3vmin;
+  height: 5vmin;
+}
+
+.table{
+  width: 100%;
+  height: 30vmin;
+  overflow: scroll;
+  border-radius: 10px;
+}
+
+.table::-webkit-scrollbar {
+  display: none;
+}
+
+
+#addedItemTable{
+  width: 100%;
+}
+
+
+.table tr{
+  height: 6vmin;
+  box-shadow: 0 0.5px 0.5px gray;
+}
+
+.table tr td{
+  text-align: center;
+} 
+
+.rightLowerBox{
+  width: 100%;
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+}
+
+form{
+  display: grid;
+  gap: 3vmin;
+  padding: 15px;
+}
+
+.lowerRightName{
+  font-size: 5vmin;
+  margin: auto;
+}
+
+.inputName{
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+input{
+  height: 6vmin;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 0px 5px gray;
+  border: none; 
+}
+
+.userInfo{
+  display: flex;
+  gap: 2vmin;
+  width: 98%;
+  align-items: center;
+}
+
+.inputPhone, .inputEmail{
+  min-width: 50%;
+}
+
+.submit{
+  height: 7vmin;
+  width: 45vmin;
+  font-size: 3vmin;
+  background-color: rgb(83, 177, 236);
+  color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
 }
 
-.payButton a {
+
+/* Laundry service Section css end */
+
+
+/* companyInfo Section css start */
+
+.companyInfoBox{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10vmin 0vmin;
+}
+
+.companyInfo1{
+  width: 20%;
+}
+
+.companyInfo1 div h3{
+  font-size: 3.5vmin;
+}
+
+.companyInfo1 div p{
+  font-size: 2.3vmin;
+}
+
+.companyInfoImg{
+  width: 20%;
+  margin: auto;
+}
+
+.companyInfo1 img{
+ max-width: 100%;
+}
+
+.companyInfo1 div{
+  text-align: center;
+}
+
+/* companyInfo Section css end */
+
+
+/* subscribe Section css start */
+
+.subscribeBox{
+  background-color: rgb(83, 177, 236);
+  color: #fff;
+  width: 100%;
+  height: 30vmin;
+  display: flex;
+  align-items: center;
+}
+
+.subscribeHeading{
+  width: 40%;
+  margin: auto;
+  font-size: 5vmin;
+}
+
+.subscribeInputs{
+  width: 50%;
+}
+
+.subscribeInputs input{
+max-width: 40%;
+margin: 3vmin;
+padding-left: 2vmin;
+}
+
+.subCon{
+  max-width: 100%;
+}
+
+.subscribeBtn{
+  height: 7vmin;
+  width: 45vmin;
+  font-size: 3vmin;
+  background-color: rgb(20, 59, 83);
+  color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+/* subscribe Section css end */
+
+/* footer css start */
+
+footer{
+  background-color: #213454;
   color: #fff;
 }
 
-.paymentMode {
+.footIcon{
   display: flex;
+}
+
+footer .companyInfoBox .companyInfo1{
+  width: 20%;
+  background-color: #213454;
+  display: grid;
+  justify-content: left;
+  gap: 1.5vmin;
+}
+
+footer .companyInfoBox{
+  display: flex;
+  height: 30vmin;
+  align-items: baseline;
   justify-content: space-evenly;
 }
-.paymentMode img {
-  max-height: 3vmin;
+
+.footIcon{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.continueShooping button {
-  font-size: 3vmin;
-  border: none;
-  margin-top: 1.5vmin;
-  margin-bottom: 1.5vmin;
+.footIcon img{
+  max-height: 40%;
 }
-/* shopping cart Section css end */
 
-  
-  footer {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5vmin;
-    color: #fff;
-    height: 60px;
-  }
-  
-  .heart {
-    color: red;
-    font-size: 8vmin;
-    margin: 3vmin;
-  }
-  
+.footLink{
+  font-size: 15px;
+}
+
+.companyInfo1 .impoLink{
+  font-size: 4vmin;
+}
+
+.companyInfo1 .footLogo{
+  font-size: 6.5vmin;
+}
+
+.companyInfo1 h4{
+  font-size: 3.7vmin;
+}
+
+/* footer css end */
+
+
+
+
+
+
+
+
   @media (max-width: 700px) {
     .menu-icon {
       display: block;
@@ -370,19 +573,19 @@ td span{
 /* card box css */
 
 
-.cartInfoBox{
+.serviceInfoBox{
   display: grid;
 }
 
-.cartInfoBox, .leftBox{
+.serviceInfoBox, .leftBox{
   width: 100%;
 }
 
-.cartInfoBox, .leftBox table{
+.serviceInfoBox, .leftBox table{
   margin: auto;
 }
 
-.cartInfoBox, .rightBox{
+.serviceInfoBox, .rightBox{
   width: 90%;
 }
 
