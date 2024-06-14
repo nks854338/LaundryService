@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+button{
+  cursor: pointer;
+}
+
 body {
   display: flex;
   flex-direction: column;
