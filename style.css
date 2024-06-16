@@ -327,6 +327,7 @@ a {
 .addToCartBtn {
   height: 6vmin;
   width: 100%;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 1vmin;
@@ -336,8 +337,7 @@ a {
 }
 
 .remove{
-  background-color: #ef233c;
-  color: #fff;
+  background-color: #ff939f;
 }
 
 .noItem{
