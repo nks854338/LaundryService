@@ -257,6 +257,16 @@ a {
   border-radius: 15px;
 }
 
+.remove{
+  background-color: #ef233c;
+  color: #fff;
+}
+
+.noItem{
+  margin: 3vmin;
+  font-size: 3vmin;
+}
+
 /* right box */
 
 .rightUpperBox {
