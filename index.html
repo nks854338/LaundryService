@@ -212,10 +212,10 @@
                       class="serviceImg"
                     />
                   </div>
-                  <div class="serviceName">Dry cleaning</div>
+                  <div class="serviceName">QuickClean Laundry</div>
                   <div class="servicePrice">
                     <i class="fa-solid fa-circle" style="color: transparent"></i>
-                    ₹200.00
+                    ₹500.00
                   </div>
                 </div>
               </td>
@@ -286,16 +286,21 @@
             <div class="addedItemList">
               <div class="table">
                 <table id="addedItemTable">
-                  <tr>
-                    <th>S.No</th>
-                    <th>Service Name</th>
-                    <th>Price</th>
-                  </tr>
+                  <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Service Name</th>
+                        <th>Service Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
                 </table>
               </div>
               <div class="amountInfo">
                 <div class="totalAmountName">Total Amount:</div>
-                <div class="totalAmountValue">₹0.00</div>
+                <div id="totalAmountValue">₹0.00</div>
               </div>
             </div>
           </div>
@@ -304,19 +309,19 @@
               <h2 class="lowerRightName">Book Now</h2>
               <div class="inputName">
                 <h3>Name</h3>
-                <input type="text" class="inputUserDetails userName" />
+                <input type="text" class="inputUserDetails userName" required />
               </div>
               <div class="userInfo">
                 <div class="inputEmail">
                   <h3>Email</h3>
-                  <input type="email" class="inputUserDetails userOtherInfo" />
+                  <input type="email" class="inputUserDetails userOtherInfo email" required />
                 </div>
                 <div class="inputPhone">
                   <h3>Phone no</h3>
-                  <input type="number" class="inputUserDetails userOtherInfo" />
+                  <input type="number" class="inputUserDetails userOtherInfo phoneNo" required />
                 </div>
               </div>
-              <div class="submit">Book Now</div>
+              <div class="submit" onclick="bookNow()">Book Now</div>
             </form>
           </div>
         </div>
@@ -448,3 +453,38 @@
   </body>
   <script src="script.js"></script>
 </html>
+
+
+<!-- 
+function bookNow() {
+  if (userName.value !== "" && email.value !== "" && phoneNo.value !== "" && cartItems.length > 0) {
+    // Perform booking action here
+    let addedItemTable = document.getElementById("addedItemTable").getElementsByTagName("tbody")[0];
+    addedItemTable.innerText = "Items booked successfully!"; // Update UI accordingly
+    // Reset cart items and UI if needed
+    cartItems = [];
+    renderServices();
+  } else {
+    alert("Please fill in all details and add items to the cart!");
+  }
+}
+
+
+
+
+
+// Function to check if there are any items in the cart
+function checkAnyItemInCart() {
+  if (cartItems.length === 0) {
+    let addedItemTable = document.getElementById("addedItemTable").getElementsByTagName("tbody")[0];
+    addedItemTable.innerText = "No Item is present";
+    let bookNowBtn = document.getElementsByClassName("submit")[0]; // Assuming there's only one element with class "submit"
+    bookNowBtn.style.backgroundColor = "green"; 
+  }
+}
+
+// Calling the checkAnyItemInCart function initially to set up the UI
+checkAnyItemInCart();
+
+
+ -->
