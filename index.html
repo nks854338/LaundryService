@@ -16,6 +16,7 @@
     <title>Laundry Project</title>
   </head>
   <body>
+    <header id="home">
     <nav>
       <div id="logo"><img src="image/laundary.png" class="logo" /></div>
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -24,10 +25,10 @@
       ></label>
       <div id="menu" class="menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#facilitiesSection">Services</a></li>
+          <li><a href="#aboutUs">About us</a></li>
+          <li><a href="#contactUs">Contact us</a></li>
         </ul>
       </div>
       <div id="user"><img src="image/profilePic.png" class="profilePic" /></div>
@@ -57,6 +58,7 @@
         </div>
       </div>
     </section>
+  </header>
 
     <section class="section2">
       <div class="companyInfo">
@@ -90,6 +92,36 @@
               <div class="info11">2+ yrs</div>
               <div class="info12">Experience</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilitiesSection" id="facilitiesSection">
+      <div class="leftBoxes">
+        <div class="serviceInfoTitle">
+          <h2>Browse Our Services.</h2>
+          <p>
+            Click on the add to cart button to add the services to your cart or press skip
+          </p>
+        </div>
+        <div class="servicesBox">
+          <div class="serivicsImg">
+            <img
+              src="image/dryCleaning.jpg"
+              alt=""
+              class="servicimg"
+              id="servicimg"
+              height="200px"
+            />
+          </div>
+          <div class="serviceInfo">
+            <div class="serviceName">Dry cleaning</div>
+            <div class="servicePrice">₹200.00</div>
+          </div>
+          <div class="ServiceButton">
+            <button class="skip" id="skip">Skip</button>
+            <button class="addItem" id="addItem">Add Item</button>
           </div>
         </div>
       </div>
@@ -307,16 +339,16 @@
           <div class="rightLowerBox">
             <form action="">
               <h2 class="lowerRightName">Book Now</h2>
-              <div class="inputName">
+              <div class="inputName input">
                 <h3>Name</h3>
                 <input type="text" class="inputUserDetails userName" required />
               </div>
               <div class="userInfo">
-                <div class="inputEmail">
+                <div class="inputEmail input">
                   <h3>Email</h3>
                   <input type="email" class="inputUserDetails userOtherInfo email" required />
                 </div>
-                <div class="inputPhone">
+                <div class="inputPhone input">
                   <h3>Phone no</h3>
                   <input type="number" class="inputUserDetails userOtherInfo phoneNo" required />
                 </div>
@@ -327,7 +359,7 @@
         </div>
       </div>
     </section>
-    <section class="companyInfoSection">
+    <section class="companyInfoSection" id="aboutUs">
       <div class="companyInfoBox">
         <div class="companyInfo1">
           <div class="companyInfoImg">
@@ -375,7 +407,7 @@
         </div>
       </div>
     </section>
-    <section class="subscriptionSection">
+    <section class="subscriptionSection" id="contactUs">
       <div class="subscribeBox">
         <div class="subscribeHeading"><h2>Subscribe to our newsletter</h2></div>
         <div class="subscribeInputs">
@@ -453,38 +485,3 @@
   </body>
   <script src="script.js"></script>
 </html>
-
-
-<!-- 
-function bookNow() {
-  if (userName.value !== "" && email.value !== "" && phoneNo.value !== "" && cartItems.length > 0) {
-    // Perform booking action here
-    let addedItemTable = document.getElementById("addedItemTable").getElementsByTagName("tbody")[0];
-    addedItemTable.innerText = "Items booked successfully!"; // Update UI accordingly
-    // Reset cart items and UI if needed
-    cartItems = [];
-    renderServices();
-  } else {
-    alert("Please fill in all details and add items to the cart!");
-  }
-}
-
-
-
-
-
-// Function to check if there are any items in the cart
-function checkAnyItemInCart() {
-  if (cartItems.length === 0) {
-    let addedItemTable = document.getElementById("addedItemTable").getElementsByTagName("tbody")[0];
-    addedItemTable.innerText = "No Item is present";
-    let bookNowBtn = document.getElementsByClassName("submit")[0]; // Assuming there's only one element with class "submit"
-    bookNowBtn.style.backgroundColor = "green"; 
-  }
-}
-
-// Calling the checkAnyItemInCart function initially to set up the UI
-checkAnyItemInCart();
-
-
- -->

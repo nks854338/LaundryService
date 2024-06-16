@@ -22,6 +22,9 @@ nav {
   background-color: #fff;
   box-shadow: 0px 5px 10px gray;
   padding: 0px 3vmin;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #logo {
@@ -182,6 +185,81 @@ a {
 }
 
 /* second section css end */
+
+.facilitiesSection {
+  margin-top: 5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facilitiesSection .leftBoxes {
+  border-radius: 10px;
+  padding: 3vmin;
+  width: 80%;
+}
+
+
+.servicesBox{
+  display: grid;
+  align-items: center;
+  gap: 2vmin;
+  margin: 5vmin;
+}
+
+.serivicsImg{
+  max-width: 60%;
+  margin: auto;
+}
+
+.serivicsImg img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: fit-content;
+  border-radius: 30px;
+  box-shadow: gray 0 2px 5px;
+}
+
+.serviceInfo{
+  display: flex;
+  align-items: center;
+  margin: 2vmin 20vmin;
+  justify-content: space-around;
+  font-size: 4vmin;
+}
+
+.ServiceButton{
+  display: flex;
+  align-items: center;
+  margin: 0vmin 25vmin;
+  justify-content: center;
+}
+
+.ServiceButton button{
+  height: 6vmin;
+  width: 25vmin;
+ color: #fff;
+ font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  font-size: 3vmin;
+  margin: 3vmin;
+}
+
+.ServiceButton .skip{
+  background-color: #ff7477;
+}
+
+.ServiceButton .addItem{
+  background-color: #25a244;
+}
+
+
+
+
 
 /* Laundry service Section css start */
 
@@ -348,9 +426,11 @@ form {
 input {
   height: 6vmin;
   border-radius: 10px;
-  width: 100%;
+  width: 95%;
   box-shadow: 0 0px 5px gray;
   border: none;
+  padding-left: 3vmin ;
+  font-size: 2.5vmin;
 }
 
 .userInfo {
@@ -783,6 +863,10 @@ footer .companyInfoBox {
 
 .InstructionForCart{
   font-size: 13px;
+}
+
+.input h3, #addedItemTable thead tr th{
+  font-size: 4vmin;
 }
 
 

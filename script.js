@@ -3,6 +3,13 @@ let email = document.getElementsByClassName("email")[0];
 let phoneNo = document.getElementsByClassName("phoneNo")[0];
 const addToCartButtons = document.querySelectorAll('.addToCartBtn');
 
+let serviceName = document.getElementsByClassName("serviceName")[0];
+let serviceImg = document.getElementsByClassName("servicimg")[0];
+let servicePrice = document.getElementsByClassName("servicePrice")[0];
+
+let addBtn = document.getElementById("addItem");
+let skip = document.getElementById("skip");
+
 let cartItems = [];
 let cartBtn1 = document.getElementById("cartBtn1");
 let cartBtn2 = document.getElementById("cartBtn2");
@@ -24,29 +31,65 @@ let service = [
   {
     name: "Dry cleaning",
     Price: "200",
+    img: "image/dryCleaning.jpg",
   },
-  { name: "Ironing", Price: "30", Img: "Laundry.png" },
+  { name: "Ironing", Price: "30", img: "image/ironing.jpg" },
   {
     name: "Stain removal",
     Price: "550",
+    img: "image/strainRemoval.jpg",
   },
   {
     name: "Wash and fold",
     Price: "150",
+    img: "image/washAndFold.jpg",
   },
   {
     name: "QuickClean Laundry",
     Price: "500",
+    img: "image/quickclean.jpg",
   },
   {
     name: "Wash and iron",
     Price: "350",
+    img: "image/wash-and-iron.jpg",
   },
   {
     name: "Wedding dress cleaning",
     Price: "3000",
+    img: "image/weddingDressCleaning.jpg",
   },
 ];
+
+function getFacilities() {
+  let i = 1;
+  console.log(serviceImg.src);
+  addBtn.addEventListener("click", () => {
+    serviceName.innerText = service[i].name;
+    serviceImg.src = service[i].img;
+    servicePrice.innerText = `₹${service[i].Price}`;
+    i++;
+    if (i > service.length - 1) {
+      i = 0;
+    }
+    cartItems.push({
+      name: service[i].name,
+      Price: service[i].Price,
+    });
+    console.log(cartItems);
+    renderServices() 
+  });
+
+  skip.addEventListener("click", () => {
+    serviceName.innerText = service[i].name;
+    serviceImg.src = service[i].img;
+    servicePrice.innerText = `₹${service[i].Price}`;
+    i++;
+    if (i > service.length - 1) {
+      i = 0;
+    }
+  });
+}
 
 function getServices() {
   cartBtn1.addEventListener("click", () => {
@@ -296,4 +339,5 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 getServices();
+getFacilities();
 cheakAnyItemInCart();
