@@ -845,15 +845,6 @@ footer .companyInfoBox {
     margin: 5vmin;
   }
   
-  .serivicsImg{
-    max-width: 70%;
-  }
-  
-  .serivicsImg img{
-    width: 100%;
-    border-radius: 20px;
-  }
-  
   .serviceInfo{
     margin: 2vmin 20vmin;
     justify-content: space-around;
