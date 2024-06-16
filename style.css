@@ -822,6 +822,61 @@ footer .companyInfoBox {
     margin: auto;
   }
 
+  /* facilitiesSection css */
+
+  .facilitiesSection {
+    margin-top: 5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .facilitiesSection .leftBoxes {
+    border-radius: 10px;
+    padding: 1vmin;
+    width: 100%;
+  }
+  
+  
+  .servicesBox{
+    display: grid;
+    align-items: center;
+    gap: 2vmin;
+    margin: 5vmin;
+  }
+  
+  .serivicsImg{
+    max-width: 95%;
+  }
+  
+  .serivicsImg img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .serviceInfo{
+    margin: 2vmin 20vmin;
+    justify-content: space-around;
+    font-size: 4vmin;
+  }
+  
+  .ServiceButton{
+    align-items: center;
+    margin: 0vmin 25vmin;
+  }
+  
+  .ServiceButton button{
+    height: 7vmin;
+    width: 30vmin;
+   color: #fff;
+   font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    font-size: 3vmin;
+    margin: 3vmin;
+  }
+  
+
   /* serviceSection css*/ /* Laundry service Section css start */
 
   .serviceContainer {
