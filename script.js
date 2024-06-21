@@ -1,7 +1,7 @@
 let userName = document.getElementsByClassName("userName")[0];
 let email = document.getElementsByClassName("email")[0];
 let phoneNo = document.getElementsByClassName("phoneNo")[0];
-const addToCartButtons = document.querySelectorAll('.addToCartBtn');
+const addToCartButtons = document.querySelectorAll(".addToCartBtn");
 
 let serviceName = document.getElementsByClassName("serviceName")[0];
 let serviceImg = document.getElementsByClassName("servicimg")[0];
@@ -77,7 +77,7 @@ function getFacilities() {
       Price: service[i].Price,
     });
     console.log(cartItems);
-    renderServices() 
+    renderServices();
   });
 
   skip.addEventListener("click", () => {
@@ -95,7 +95,7 @@ function getServices() {
   cartBtn1.addEventListener("click", () => {
     if (btn1 == true) {
       cartBtn1.innerText = "Remove Item";
-      cartBtn1.classList.add('remove');
+      cartBtn1.classList.add("remove");
       cartItems.push({
         name: service[0].name,
         Price: service[0].Price,
@@ -118,7 +118,7 @@ function getServices() {
   cartBtn2.addEventListener("click", () => {
     if (btn2 == true) {
       cartBtn2.innerText = "Remove Item";
-      cartBtn2.classList.add('remove');
+      cartBtn2.classList.add("remove");
       cartItems.push({
         name: service[1].name,
         Price: service[1].Price,
@@ -141,7 +141,7 @@ function getServices() {
   cartBtn3.addEventListener("click", () => {
     if (btn3 == true) {
       cartBtn3.innerText = "Remove Item";
-      cartBtn3.classList.add('remove');
+      cartBtn3.classList.add("remove");
       cartItems.push({
         name: service[2].name,
         Price: service[2].Price,
@@ -164,7 +164,7 @@ function getServices() {
   cartBtn4.addEventListener("click", () => {
     if (btn4 == true) {
       cartBtn4.innerText = "Remove Item";
-      cartBtn4.classList.add('remove');
+      cartBtn4.classList.add("remove");
       cartItems.push({
         name: service[3].name,
         Price: service[3].Price,
@@ -187,7 +187,7 @@ function getServices() {
   cartBtn5.addEventListener("click", () => {
     if (btn5 == true) {
       cartBtn5.innerText = "Remove Item";
-      cartBtn5.classList.add('remove');
+      cartBtn5.classList.add("remove");
       cartItems.push({
         name: service[4].name,
         Price: service[4].Price,
@@ -207,11 +207,10 @@ function getServices() {
     }
   });
 
-
   cartBtn6.addEventListener("click", () => {
     if (btn6 == true) {
       cartBtn6.innerText = "Remove Item";
-      cartBtn6.classList.add('remove');
+      cartBtn6.classList.add("remove");
       cartItems.push({
         name: service[5].name,
         Price: service[5].Price,
@@ -231,11 +230,10 @@ function getServices() {
     }
   });
 
-
   cartBtn7.addEventListener("click", () => {
     if (btn7 == true) {
       cartBtn7.innerText = "Remove Item";
-      cartBtn7.classList.add('remove');
+      cartBtn7.classList.add("remove");
       cartItems.push({
         name: service[6].name,
         Price: service[6].Price,
@@ -255,7 +253,6 @@ function getServices() {
     }
   });
 }
-
 
 //render the carts in added item box
 function renderServices() {
@@ -277,14 +274,14 @@ function renderServices() {
   cheakAnyItemInCart();
 }
 
-
 //Chreak any item is present in cart or not
 function cheakAnyItemInCart() {
   if (cartItems.length === 0) {
     let addedItemTable = document
       .getElementById("addedItemTable")
       .getElementsByTagName("tbody")[0];
-    addedItemTable.innerHTML = "<div class=noItem><i class='fa-solid fa-circle-info' style='color: #111;'></i> No Item is present</div>";
+    addedItemTable.innerHTML =
+      "<div class=noItem><i class='fa-solid fa-circle-info' style='color: #111;'></i> No Item is present</div>";
     cartBtn1.innerText = "Add Item";
     cartBtn2.innerText = "Add Item";
     cartBtn3.innerText = "Add Item";
@@ -299,12 +296,8 @@ function cheakAnyItemInCart() {
     cartBtn5.classList.remove("remove");
     cartBtn6.classList.remove("remove");
     cartBtn7.classList.remove("remove");
-
-
   }
 }
-
-
 
 //js to book services
 
@@ -326,17 +319,70 @@ function bookNow() {
   }
 }
 
+if (addToCartButtons.innerText === "Remove Item") {
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements with the class 'addToCartBtn'
 
-if(addToCartButtons.innerText==="Remove Item"){
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all elements with the class 'addToCartBtn'
-  
-  // Loop through each button and add the 'remove' class
-  addToCartButtons.forEach(button => {
-    button.classList.add('remove');
+    // Loop through each button and add the 'remove' class
+    addToCartButtons.forEach((button) => {
+      button.classList.add("remove");
+    });
   });
-});
 }
+
+
+// // subscribe email.js
+
+document.getElementById("BookNowForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  BookNowMail();
+});
+
+function BookNowMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phoneNo: document.getElementById("phoneNo").value,
+  };
+
+  emailjs.send("service_4tzc6mf", "template_ty9cr6o", params)
+    .then(function(response) {
+      alert("Email sent successfully!");
+      document.getElementById("name").value = "",
+    document.getElementById("email").value = "",
+    document.getElementById("phoneNo").value = ""
+    })
+    .catch(function(error) {
+      console.error("Failed to book service:", error);
+    });
+}
+
+
+
+// subscribe email.js
+
+document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  subscribeMail();
+});
+
+function subscribeMail() {
+  var params = {
+    subName: document.getElementById("subName").value,
+    subEmail: document.getElementById("subEmail").value,
+  };
+
+  emailjs.send("service_4tzc6mf", "template_ixx2jxr", params)
+    .then(function(response) {
+      alert("You are subscribed successfully!");
+      document.getElementById("subName").value = "",
+      document.getElementById("subEmail").value = ""
+    })
+    .catch(function(error) {
+      console.error("Failed to subscribe:", error);
+    });
+}
+
 
 getServices();
 getFacilities();

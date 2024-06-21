@@ -4,7 +4,7 @@
   font-family: sans-serif;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -199,20 +199,19 @@ a {
   width: 80%;
 }
 
-
-.servicesBox{
+.servicesBox {
   display: grid;
   align-items: center;
   gap: 2vmin;
   margin: 5vmin;
 }
 
-.serivicsImg{
+.serivicsImg {
   max-width: 60%;
   margin: auto;
 }
 
-.serivicsImg img{
+.serivicsImg img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,7 +222,7 @@ a {
   box-shadow: gray 0 2px 5px;
 }
 
-.serviceInfo{
+.serviceInfo {
   display: flex;
   align-items: center;
   margin: 2vmin 20vmin;
@@ -231,35 +230,31 @@ a {
   font-size: 4vmin;
 }
 
-.ServiceButton{
+.ServiceButton {
   display: flex;
   align-items: center;
   margin: 0vmin 25vmin;
   justify-content: center;
 }
 
-.ServiceButton button{
+.ServiceButton button {
   height: 6vmin;
   width: 25vmin;
- color: #fff;
- font-weight: 600;
+  color: #fff;
+  font-weight: 600;
   border-radius: 25px;
   border: none;
   font-size: 3vmin;
   margin: 3vmin;
 }
 
-.ServiceButton .skip{
+.ServiceButton .skip {
   background-color: #ff7477;
 }
 
-.ServiceButton .addItem{
+.ServiceButton .addItem {
   background-color: #25a244;
 }
-
-
-
-
 
 /* Laundry service Section css start */
 
@@ -336,11 +331,11 @@ a {
   border-radius: 15px;
 }
 
-.remove{
+.remove {
   background-color: #ff939f;
 }
 
-.noItem{
+.noItem {
   margin: 3vmin;
   font-size: 3vmin;
 }
@@ -429,7 +424,7 @@ input {
   width: 95%;
   box-shadow: 0 0px 5px gray;
   border: none;
-  padding-left: 3vmin ;
+  padding-left: 3vmin;
   font-size: 2.5vmin;
 }
 
@@ -830,43 +825,41 @@ footer .companyInfoBox {
     align-items: center;
     justify-content: center;
   }
-  
+
   .facilitiesSection .leftBoxes {
     border-radius: 10px;
     padding: 1vmin;
     width: 100%;
   }
-  
-  
-  .servicesBox{
+
+  .servicesBox {
     display: grid;
     align-items: center;
     gap: 2vmin;
     margin: 5vmin;
   }
-  
-  .serviceInfo{
+
+  .serviceInfo {
     margin: 2vmin 20vmin;
     justify-content: space-around;
     font-size: 4vmin;
   }
-  
-  .ServiceButton{
+
+  .ServiceButton {
     align-items: center;
     margin: 0vmin 25vmin;
   }
-  
-  .ServiceButton button{
+
+  .ServiceButton button {
     height: 7vmin;
     width: 30vmin;
-   color: #fff;
-   font-weight: 600;
+    color: #fff;
+    font-weight: 600;
     border-radius: 25px;
     border: none;
     font-size: 3vmin;
     margin: 3vmin;
   }
-  
 
   /* serviceSection css*/ /* Laundry service Section css start */
 
@@ -892,28 +885,28 @@ footer .companyInfoBox {
     margin-bottom: 5vmin;
   }
 
-.serviceName, .servicePrice{
-  font-size: 13px;
-}
+  .serviceName,
+  .servicePrice {
+    font-size: 13px;
+  }
 
-.addToCartBtn {
-  height: 5vmin;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 1vmin;
-  border-radius: 10px;
-  font-size: 12px;
-  padding: 1vmin;
-}
+  .addToCartBtn {
+    height: 5vmin;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vmin;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 1vmin;
+  }
 
-.InstructionForCart{
-  font-size: 13px;
-}
+  .InstructionForCart {
+    font-size: 13px;
+  }
 
-.input h3, #addedItemTable thead tr th{
-  font-size: 4vmin;
-}
-
-
+  .input h3,
+  #addedItemTable thead tr th {
+    font-size: 4vmin;
+  }
 }

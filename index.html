@@ -12,6 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- email js syntax's code part -->
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("jEPSOVDt_y5JRZMhL");
+    })();
+  </script>
 
     <title>Laundry Project</title>
   </head>
@@ -337,23 +347,23 @@
             </div>
           </div>
           <div class="rightLowerBox">
-            <form action="">
+            <form id="BookNowForm">
               <h2 class="lowerRightName">Book Now</h2>
               <div class="inputName input">
                 <h3>Name</h3>
-                <input type="text" class="inputUserDetails userName" required />
+                <input type="text" id="name" class="inputUserDetails userName" required />
               </div>
               <div class="userInfo">
                 <div class="inputEmail input">
                   <h3>Email</h3>
-                  <input type="email" class="inputUserDetails userOtherInfo email" required />
+                  <input type="email" id="email" class="inputUserDetails userOtherInfo email" required />
                 </div>
                 <div class="inputPhone input">
                   <h3>Phone no</h3>
-                  <input type="number" class="inputUserDetails userOtherInfo phoneNo" required />
+                  <input type="number" id="phoneNo" class="inputUserDetails userOtherInfo phoneNo" required />
                 </div>
               </div>
-              <div class="submit" onclick="bookNow()">Book Now</div>
+              <div class="submit" onclick="BookNowMail()">Book Now</div>
             </form>
           </div>
         </div>
@@ -411,15 +421,13 @@
       <div class="subscribeBox">
         <div class="subscribeHeading"><h2>Subscribe to our newsletter</h2></div>
         <div class="subscribeInputs">
-          <div class="subCon">
+          <form id="subscribeForm" class="subCon">
             <div class="subscribeInput">
-              <input type="text" placeholder="Full Name..." /><input
-                type="email"
-                placeholder="Email..."
-              />
+              <input type="text" id="subName" placeholder="Full Name..." />
+              <input type="email" id="subEmail" placeholder="Email..." />
             </div>
-            <div class="subscribeBtn">Subscribe</div>
-          </div>
+            <div class="subscribeBtn" onclick="subscribeMail()">Subscribe</div>
+          </form>
         </div>
       </div>
     </section>
