@@ -12,6 +12,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+display: none;
 }
 
 nav {
@@ -64,22 +69,6 @@ nav {
   height: 8vmin;
 }
 
-#user {
-  margin: 1vmin 3.8vmin;
-  height: 8vmin;
-  width: 8vmin;
-  border-radius: 50%;
-  background-color: #213454;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#user img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 a {
   text-decoration: none;
   font-size: 3.2vmin;
@@ -127,13 +116,21 @@ a {
 }
 
 .first1 button {
+  border: none;
   padding: 2vmin 7vmin;
-  font-size: 4vmin;
   margin: 5% 20%;
   border-radius: 15px;
   background-color: rgb(83, 177, 236);
-  color: #fff;
   cursor: pointer;
+}
+
+.first1 button:hover{
+  transform: scale(1.04);
+}
+
+.first1 button a{
+  color: #fff;
+  font-size: 15px;
 }
 
 /* section2 css */
@@ -196,19 +193,18 @@ a {
 .facilitiesSection .leftBoxes {
   border-radius: 10px;
   padding: 3vmin;
-  width: 80%;
+  width: 95%;
 }
 
 .servicesBox {
-  display: grid;
-  align-items: center;
-  gap: 2vmin;
-  margin: 5vmin;
+  gap: 5px;
+  margin: 1vmin;
 }
 
 .serivicsImg {
-  max-width: 60%;
+  max-width: 50%;
   margin: auto;
+  padding: 3vmin 1vmin;
 }
 
 .serivicsImg img {
@@ -218,7 +214,7 @@ a {
   margin: auto;
   width: 100%;
   height: fit-content;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: gray 0 2px 5px;
 }
 
@@ -233,19 +229,19 @@ a {
 .ServiceButton {
   display: flex;
   align-items: center;
-  margin: 0vmin 25vmin;
+  gap: 45vmin;
   justify-content: center;
 }
 
 .ServiceButton button {
-  height: 6vmin;
-  width: 25vmin;
+  height: 40px;
+  width: 200px;
   color: #fff;
   font-weight: 600;
   border-radius: 25px;
   border: none;
   font-size: 3vmin;
-  margin: 3vmin;
+  margin: 1vmin;
 }
 
 .ServiceButton .skip {
@@ -258,19 +254,19 @@ a {
 
 /* Laundry service Section css start */
 
-.serviceContainer {
+#serviceContainer {
   display: flex;
   justify-content: space-between;
   margin: 10vmin;
 }
 
-.serviceContainer .leftBox {
+#serviceContainer .leftBox {
   box-shadow: 0 0px 5px gray;
   border-radius: 10px;
   padding: 3vmin;
   width: 48%;
 }
-.serviceContainer .rightBox {
+#serviceContainer .rightBox {
   width: 48%;
 }
 
@@ -542,6 +538,7 @@ input {
 footer {
   background-color: #213454;
   color: #fff;
+  min-height: max-content;
 }
 
 .footIcon {
@@ -550,7 +547,6 @@ footer {
 
 footer .companyInfoBox .companyInfo1 {
   width: 20%;
-  background-color: #213454;
   display: grid;
   justify-content: left;
   gap: 1.5vmin;
@@ -592,7 +588,7 @@ footer .companyInfoBox {
 /* footer css end */
 
 @media (max-width: 850px) {
-  .serviceContainer {
+  #serviceContainer {
     margin: 2vmin;
   }
 
@@ -609,17 +605,17 @@ footer .companyInfoBox {
 
   /* Laundry service Section css start */
 
-  .serviceContainer {
+  #serviceContainer {
     display: grid;
     justify-content: stretch;
     margin: 5vmin;
   }
 
-  .serviceContainer .leftBox {
+  #serviceContainer .leftBox {
     margin-bottom: 5vmin;
     width: 95%;
   }
-  .serviceContainer .rightBox {
+  #serviceContainer .rightBox {
     width: 99%;
   }
 
@@ -685,7 +681,7 @@ footer .companyInfoBox {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 50px;
     width: 100%;
   }
 
@@ -702,12 +698,12 @@ footer .companyInfoBox {
 
   .box1 {
     max-width: 100%;
-    min-width: 85%;
+    min-width: 90%;
     margin: auto;
   }
 
   .box2 {
-    width: 70%;
+    width: 90%;
     margin: auto;
   }
 
@@ -731,6 +727,13 @@ footer .companyInfoBox {
   .rightBox {
     width: 90%;
   }
+
+.ServiceButton {
+  display: flex;
+  align-items: center;
+  gap: 5vmin;
+  justify-content: center;
+}
 
   /* footer css start */
 
@@ -768,34 +771,77 @@ footer .companyInfoBox {
   /* footer css end */
 }
 
-@media (max-width: 600px) {
-}
+
+
+
+
+
+
 
 @media (max-width: 500px) {
+nav{
+  height: 60px;
+}
+
   #logo img {
-    height: 25px;
+    height: 40px;
     padding: 3vmin;
+  }
+
+  label i{
+    font-size: 30px;
+  }
+
+  .menu{
+    padding-top: 15vmin;
+  }
+
+  ul li a{
+    font-size: 20px;
   }
 
   .box1 {
     padding: 0;
   }
 
+  .first1 h2{
+    font-size: 30px;
+  }
+
+  .first1 p{
+    font-size: 15px;
+    margin-bottom: 5vmin;
+  }
+
+  .first1 button{
+    width: 90%;
+    margin: auto;
+  }
+
   .menu-icon {
     font-size: 20px;
   }
 
+  /* section2 css start */
+
+.companyInfo, .serviceInfoTitle{
+padding: 20px;
+}
+
+  /* section2 css end */
+
   /* companyInfo Section css start */
 
   .companyInfoSection .companyInfoBox {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: stretch;
     align-items: center;
     gap: 5vmin;
   }
 
   .companyInfoSection .companyInfoBox .companyInfo1 {
-    width: 80%;
+    width: 90%;
     margin: auto;
     box-shadow: 0 1px 5px gray;
     padding: 20px;
@@ -833,11 +879,20 @@ footer .companyInfoBox {
   }
 
   .servicesBox {
-    display: grid;
+    display: flex;
     align-items: center;
     gap: 2vmin;
     margin: 5vmin;
+    flex-direction: column;
   }
+
+  .serivicsImg {
+  max-width: 90%;
+  margin: auto;
+  padding: 3vmin 1vmin;
+}
+
+  
 
   .serviceInfo {
     margin: 2vmin 20vmin;
@@ -863,15 +918,15 @@ footer .companyInfoBox {
 
   /* serviceSection css*/ /* Laundry service Section css start */
 
-  .serviceContainer {
+  #serviceContainer {
     margin: 2vmin;
   }
 
-  .serviceContainer .leftBox {
+  #serviceContainer .leftBox {
     margin-bottom: 5vmin;
     width: 95%;
   }
-  .serviceContainer .rightBox {
+  #serviceContainer .rightBox {
     width: 99%;
   }
 
@@ -881,7 +936,8 @@ footer .companyInfoBox {
   }
 
   .rightLowerBox {
-    width: 102%;
+  padding: 10px;
+    width: 98%;
     margin-bottom: 5vmin;
   }
 
@@ -889,6 +945,17 @@ footer .companyInfoBox {
   .servicePrice {
     font-size: 13px;
   }
+
+  .BookNowForm{
+  width: 90vw;
+  }
+
+  .userInfo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+
 
   .addToCartBtn {
     height: 5vmin;
@@ -909,4 +976,113 @@ footer .companyInfoBox {
   #addedItemTable thead tr th {
     font-size: 4vmin;
   }
+
+  .input{
+  min-width: 100%;
+  }
+
+  .inputUserDetails{
+  border-radius: 5px;
+  min-width: 100%;
+  }
+
+  /* subscripe section css start */
+
+ .subscribeBox {
+ margin-top: 5vmin;
+    display: flex;
+    flex-direction: column;
+    padding: 5vmin 0;
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .subscribeInputs {
+    width: 100%;
+    padding: 1vmin;
+    margin: auto;
+  }
+
+  .subscribeInput {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .subscribeForm{
+  width: 100%;
+  }
+
+   .subscribeInput input{
+   min-width: 85vw;
+   border-radius: 5px;
+   }
+
+  .subscribeHeading {
+    font-size: 4vmin;
+    width: 90%;
+    text-align: center;
+  }
+
+  .subscribeBtn{
+  max-width: 50vw;
+  }
+
+
+  /* subscripe section css end */
+
+
+  
+/* footer css start */
+
+
+
+footer .companyInfoBox .companyInfo1 {
+  width: 80%;
+  display: grid;
+  justify-content: left;
+  gap: 1.5vmin;
+}
+
+.footLink {
+  font-size: 2.8vmin;
+  text-decoration: underline;
+}
+
+.companyInfo1 .impoLink {
+  font-size: 20px;
+}
+
+.companyInfo1 .footLogo {
+  font-size: 6.5vmin;
+}
+
+#footLink{
+text-decoration: none;
+}
+
+
+
+
+
+
+footer {
+  min-width: 100vw;
+  min-height: fit-content;
+}
+
+.companyInfoBox{
+display: flex;
+flex-direction: column;
+margin: 3vmin 4vmin;
+}
+
+footer .companyInfoBox .companyInfo1{
+padding: 2.5vmin;
+}
+
+footer .companyInfoBox {
+  height: max-content;
+}
+
+/* footer css end */
 }
