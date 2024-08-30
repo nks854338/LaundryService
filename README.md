@@ -19,23 +19,3 @@ Welcome to FreshBeatsLaundry, your go-to laundry service web app! This project o
 2. Add to Cart: Add the selected services to your cart.
 3. Book Service: Finalize your selection and book the service.
 4. Email Confirmation: The service details are sent to the owner via email for further processing.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-LaundryService
-
-https://loquacious-bonbon-277361.netlify.app/
-
-Visit the Site:  https://nks854338.github.io/LaundryService/
